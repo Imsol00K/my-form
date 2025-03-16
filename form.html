@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biểu Mẫu Liên Hệ</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 50%;
+            margin: 50px auto;
+            background-color: #fff;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        label {
+            font-size: 16px;
+            margin-bottom: 5px;
+            display: block;
+        }
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        textarea {
+            width: 100%;
+            padding: 10px;
+            margin: 8px 0;
+            border-radius: 4px;
+            border: 1px solid #ddd;
+            box-sizing: border-box;
+        }
+        textarea {
+            resize: vertical;
+            height: 150px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            padding: 12px 20px;
+            text-align: center;
+            display: block;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <h2>Liên Hệ Với Chúng Tôi</h2>
+        <form action="process_form.php" method="post">
+            <label for="fullname">Họ tên:</label>
+            <input type="text" id="fullname" name="fullname" required placeholder="Nhập họ tên của bạn">
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required placeholder="Nhập email của bạn">
+
+            <label for="phone">Số điện thoại:</label>
+            <input type="tel" id="phone" name="phone" required placeholder="Nhập số điện thoại của bạn">
+
+            <label for="message">Nội dung:</label>
+            <textarea id="message" name="message" required placeholder="Nhập nội dung liên hệ của bạn"></textarea>
+
+            <button type="submit">Gửi</button>
+        </form>
+    </div>
+
+</body>
+</html>
